@@ -8,10 +8,6 @@
     margin: 1rem;
 }
 
-.gpt3__features-container__feature-img {
-    width: 200px;
-}
-
 .gpt3__features-container__feature-title {
     flex: 1;
     max-width: 180px;
@@ -24,7 +20,7 @@
     font-size: 18px;
     line-height: 24px;
     letter-spacing: -0.04em;
-    color: black;
+    color: white;
 }
 
 .gpt3__features-container__feature-title div {

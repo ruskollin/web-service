@@ -1,20 +1,21 @@
 import React from 'react';
-import Feature from '../../components/feature/Feature';
+import Services from '../../components/services/Services';
 import './whatGPT3.css';
+import blog01 from '../../assets/blog01.png';
 
 const WhatGPT3 = () => (
   <div className="gpt3__whatgpt3 section__margin" id="wgpt3">
     <div className="gpt3__whatgpt3-feature">
-      <Feature title="What is GPT-3" text="We so opinion friends me message as delight. Whole front do of plate heard oh ought. His defective nor convinced residence own. Connection has put impossible own apartments boisterous. At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by." />
+      <h3 style={{ color: 'white' }}>Tuotamme kotihoito-, kotisairaanhoito- sekä asumisen tukipalveluja ikäihmisille, vammaisille ja kehitysvammaisille. Palvelemme kunnissa Helsinki, Espoo, Vantaa ja Kirkkonummi.</h3>
     </div>
     <div className="gpt3__whatgpt3-heading">
-      <h1 className="gradient__text">The possibilities are beyond your imagination</h1>
-      <p>Explore the Library</p>
+      <h1 className="gradient__text">Palvelumme</h1>
     </div>
     <div className="gpt3__whatgpt3-container">
-      <Feature title="Chatbots" text="We so opinion friends me message as delight. Whole front do of plate heard oh ought." />
-      <Feature title="Knowledgebase" text="At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b" />
-      <Feature title="Education" text="At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b" />
+      <Services imgUrl={blog01} title="Kotipalvelut" text="Tarjoamme apua ja avustusta asiakkaiden päivittäisissä toiminnoissa (saattaja-apu, henkilökohtainen hygienia, ruokailu, ulkoilu, kauppapalvelut). Varmistamme, että asiakkailla on turvallinen kotiympäristö." />
+      <Services imgUrl={blog01} title="Kotisairaanhoito palvelut" text="Tarjoamme perussairaanhoitoa  (haavahoito, lääkehoito, pistokset, katetrointi, ompeleiden poisto). Huolehdimme siitä, että asiakkaat saavat laadukasta hoitoa kotona." />
+      <Services imgUrl={blog01} title="Kotisiivous palvelut" text="Tarjoamme asumisen  kotisiivousta ja pyykkihuoltoa. Kotisiivouksen tärkeä asia on kodin siisteys asiakkaiden mielekkään elämän edistämiseksi. " />
+      <Services imgUrl={blog01} title="Palvelusetelit" text="Hyväksymme myös Helsingin kaupungin kotihoidon- ja kotisiivouksen myöntämiä palveluseteleitä. Palveluseteli on maksusitoumus, jolla voit ostaa palveluja yksityisiltä palveluntarjoajilta. Helsingin kaupunki (insert link here, below) https://www.hel.fi/fi/sosiaali-ja-terveyspalvelut/asiakkaan-tiedot-ja-oikeudet/palveluseteli." />
     </div>
   </div>
 );
