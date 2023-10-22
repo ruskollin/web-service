@@ -3,9 +3,9 @@ import './feature.css';
 
 const Feature = ({ title, text }) => (
   <div className="gpt3__features-container__feature">
-    <div className="gpt3__features-container__feature-title">
+    <div className={title && 'gpt3__features-container__feature-title'}>
       <div />
-      <h1>{title}</h1>
+      <h1 style={{ color: 'black' }}>{title}</h1>
     </div>
     <div className="gpt3__features-container_feature-text">
       <p>{text}</p>

@@ -29,9 +29,7 @@
 
 .gpt3__blog-container_groupB {
     flex: 1;
-
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     grid-gap: 2rem;
 }
 
@@ -51,6 +49,13 @@
 
     .gpt3__blog-container_groupA .gpt3__blog-container_article-image {
         height: 250px;
+    }
+
+    .gpt3__blog-container_groupB {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        margin: auto;
     }
 }
 
@@ -74,5 +79,4 @@
         font-size: 34px;
         line-height: 42px;
     }
-
 }

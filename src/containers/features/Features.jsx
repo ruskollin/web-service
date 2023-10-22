@@ -22,14 +22,16 @@ const featuresData = [
 ];
 
 const Features = () => (
-  <div className="gpt3__features section__padding" id="features">
-    <div className="gpt3__features-heading">
-      <h1 className="gradient__text">Ihmisarvo, Itsemääräämisoikeus ja luottamus</h1>
-    </div>
-    <div className="gpt3__features-container">
-      {featuresData.map((item, index) => (
-        <Feature title={item.title} text={item.text} key={item.title + index} />
-      ))}
+  <div className="animatable bounceInRight">
+    <div className="gpt3__features section__padding" id="features">
+      <div className="gpt3__features-heading">
+        <h1 className="gradient__text">Ihmisarvo, Itsemääräämisoikeus ja luottamus</h1>
+      </div>
+      <div className="gpt3__features-container">
+        {featuresData.map((item, index) => (
+          <Feature title={item.title} text={item.text} key={item.title + index} />
+        ))}
+      </div>
     </div>
   </div>
 );

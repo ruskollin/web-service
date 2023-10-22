@@ -18,7 +18,6 @@ const Navbar = () => {
           <p><a href="#wgpt3">Palvelustamme</a></p>
           <p><a href="#footer">Yhteystiedot</a></p>
           <p><a href="#features">Hinnastomme</a></p>
-          <p><a href="sfd">Kieli</a></p>
         </div>
       </div>
       <div className="gpt3__navbar-menu">

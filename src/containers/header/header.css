@@ -1,12 +1,32 @@
 .gpt3__header {
     display: flex;
     flex-direction: row;
-    background-image: url('../../assets/door.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
     height: 650px;
+}
+
+.img-thumbnail-1 {
+    width: 100%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: -1; 
+    overflow: hidden;
+}
+
+.img-content-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
 }
 
 .gpt3__header-content {
@@ -21,6 +41,7 @@
 
 .gpt3__header-content h1 {
     font-family: var(--font-family);
+    text-shadow: 2px 2px 4px rgba(238, 239, 238, 0.5);
     font-weight: 800;
     font-size: 62px;
     line-height: 75px;
@@ -29,11 +50,11 @@
 
 .gpt3__header-content p {
     font-family: var(--font-family);
-    font-weight: 400;
+    font-weight: 900;
     font-size: 20px;
     line-height: 28px;
-    color: var(--color-text);
-
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-top: 1.5rem;
 }
 
@@ -117,6 +138,13 @@
 .gpt3__header-image img {
     width: 100%;
     height: 100%;
+}
+
+.gpt3__header {
+    width: 100%;
+    height: auto;
+    position: relative;
+    height: 500px;
 }
 
 @media screen and (max-width: 1050px) {
