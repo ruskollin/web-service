@@ -1,5 +1,5 @@
 import React from 'react';
-import Feature from '../../components/feature/Feature';
+import Value from '../../components/value/Value';
 import './features.css';
 
 const featuresData = [
@@ -22,14 +22,14 @@ const featuresData = [
 ];
 
 const Features = () => (
-  <div className="animatable bounceInRight">
+  <div className="gpt3__features section__padding animatedbounceInRight">
     <div className="gpt3__features section__padding" id="features">
       <div className="gpt3__features-heading">
         <h1 className="gradient__text">Ihmisarvo, Itsemääräämisoikeus ja luottamus</h1>
       </div>
       <div className="gpt3__features-container">
         {featuresData.map((item, index) => (
-          <Feature title={item.title} text={item.text} key={item.title + index} />
+          <Value title={item.title} text={item.text} key={item.title + index} className="animated bounceInRight" />
         ))}
       </div>
     </div>

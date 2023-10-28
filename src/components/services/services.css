@@ -20,7 +20,7 @@
     font-size: 18px;
     line-height: 24px;
     letter-spacing: -0.04em;
-    color: white;
+    color: black;
 }
 
 .gpt3__features-container__feature-title div {
@@ -38,11 +38,12 @@
 }
 
 .gpt3__features-container_feature-text p {
-    font-family: var(--font-family);
+    font-family: 'Dosis', sans-serif;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 24px;
-    color: var(--color-text);
+    color: black;
+    text-align: left;
 }
 
 @media screen and (max-width: 550px) {

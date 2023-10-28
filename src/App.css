@@ -16,21 +16,31 @@ a {
 
 .gradient__bg {
   scroll-behavior: smooth;
-  overflow-y: scroll;
   scroll-snap-type: mandatory;
   scroll-snap-points-y: repeat(100vh);
   scroll-snap-type: y mandatory;
 }
 
-.gradient__bg__after {
+/* .gradient__bg__after {
   max-width: 1300px; 
   padding: 0 20px; 
   width: 100%;
   margin: auto;
+} */
+
+.gradient__bg__after_content {
+  padding-top: 150px;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.gradient__bg__after_content_white{
+  background-color: white;
 }
 
 .gradient__text {
-  background: white;
+  background: black;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -41,7 +51,8 @@ a {
 }
 
 .section__margin {
-  margin: 4rem 6rem;
+  margin: auto;
+  max-width: 1200px;
 }
 
 .scale-up-center {

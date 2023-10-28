@@ -1,30 +1,22 @@
+@font-face {
+    font-family: 'Dosis';
+    src: local('Dosis'), url('../../fonts/Dosis-Regular.ttf') format('truetype'); 
+  }
+
 .gpt3__whatgpt3 {
     display: flex;
     flex-direction: column;
-
+    
     padding: 2rem;
-    background: var(--color-footer);
-
-    /* ff 3.6+ */
-    background:-moz-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
-
-    /* safari 5.1+,chrome 10+ */
-    background:-webkit-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
-
-    /* opera 11.10+ */
-    background:-o-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
-
-    /* ie 10+ */
-    background:-ms-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
-
-    /* global 92%+ browsers support */
-    background:radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .gpt3__whatgpt3-feature {
     display: flex;
+    align-items: center; 
+    max-width: 100%;
+    flex-wrap: wrap; 
 }
 
 /* Customizing feature component as per needs */
@@ -43,15 +35,17 @@
     justify-content: space-between;
     align-items: center;
     
-    margin: 4rem 0 2rem;
+    margin: 10rem 0 2rem;
 }
 
 .gpt3__whatgpt3-heading h1 {
     font-size: 34px;
     line-height: 45px;
-    font-weight: 800;
-    font-family: var(--font-family);
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
     max-width: 510px;
+    letter-spacing: 4px;
 }
 
 .gpt3__whatgpt3-heading p {
@@ -78,11 +72,48 @@
     min-width: 210px;
     display: unset;
     flex-direction: column;
+    background-color: #F4CCCC;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 700px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: all 0.3s ease;
 }
 
 /* Customizing feature component as per needs */
 .gpt3__whatgpt3-container .gpt3__features-container_feature-text {
     margin-top: 0.5rem;
+}
+
+.logo-cinco {
+    border-radius: 50px;
+    padding: 20px;
+    width: inherit; 
+    height: auto;
+    flex: 0 0 auto; 
+    margin-right: 20px;
+    animation: beatAnimation 1s infinite alternate;
+}
+
+.logo-cinco:hover {
+    animation-play-state: paused;
+}
+
+
+.logo-container,
+.text-container {
+    flex: 0 0 50%; /* Each takes 50% width */
+}
+@keyframes beatAnimation {
+    0% {
+        transform: scale(1); /* Initial scale */
+    }
+    100% {
+        transform: scale(1.1); /* Slightly larger scale */
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -94,6 +125,21 @@
 
     .gpt3__whatgpt3-heading p {
         margin-top: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .gpt3__whatgpt3-feature {
+        flex-direction: column; 
+    }
+
+    .logo-container,
+    .text-container {
+        flex: 1; 
+    }
+
+    .logo-container {
+        order: -1; 
     }
 }
 

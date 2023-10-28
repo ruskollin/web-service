@@ -11,15 +11,32 @@
 }
 
 .gpt3__blog-heading h1 {
-    font-size: 62px;
-    line-height: 75px;
-    font-family: var(--font-family);
-    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    max-width: 510px;
+    letter-spacing: 4px;
 }
 
 .gpt3__blog-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1200px;
+    margin-bottom: 20rem;
+}
+
+.heading-container {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: left;
+    margin-bottom: 10rem;
 }
 
 .gpt3__blog-container_groupA {
@@ -30,7 +47,6 @@
 .gpt3__blog-container_groupB {
     flex: 1;
     display: flex;
-    grid-gap: 2rem;
 }
 
 @media screen and (max-width: 990px) {
