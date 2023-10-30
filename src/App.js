@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
-import { Footer, Blog, WhatGPT3 } from './containers';
+import { Blog, Features, WhatGPT3, Footer } from './containers';
 import { Navbar } from './components';
 import nurse from './assets/nurse-pink3.jpg';
 import './containers/header/header.css';
 import './App.css';
+import Feedback from './containers/feedback/Feedback';
+import Survey from './containers/survey/Survey';
 
 const App = () => {
   useEffect(() => {
@@ -29,8 +31,10 @@ const App = () => {
       <div className="gradient__bg__after_content">
         <div className="gradient__bg__after_content_white">
           <WhatGPT3 />
-          {/* <Features /> */}
+          <Features />
           <Blog />
+          <Feedback />
+          <Survey />
         </div>
       </div>
       <Footer />

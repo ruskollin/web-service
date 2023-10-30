@@ -1,0 +1,72 @@
+.gpt3__survey {
+  display: flex;
+  flex-direction: column;    
+  padding: 10rem 2rem;
+  margin: auto;
+  max-width: 1200px;
+  margin-bottom: 20rem;
+  }
+
+  .gpt3__survey-heading {
+    text-align: left;
+    margin-bottom: 5rem;
+}
+
+  .gpt3__survey-container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1200px;
+    margin-bottom: 20rem;
+  }
+
+  .heading-container {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: left;
+    margin-bottom: 10rem;
+}
+  
+  .question {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 10px;
+
+    font-family: 'Dosis', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 30.30px;
+    letter-spacing: 0.05em;
+    color: black;
+    margin-bottom: 2rem;
+    min-height: 60px;
+  }
+  
+  .bar {
+    width: 40%;
+    height: 20px;
+    background-color: #d88a8a;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .survey-questions {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #4caf50; /* Change color to suit your needs */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+  }

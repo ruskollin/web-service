@@ -5,14 +5,10 @@ import home1 from '../../assets/home-clean.jpg';
 import home2 from '../../assets/home-cleaning.jpg';
 import home3 from '../../assets/home-nurse.jpg';
 import home4 from '../../assets/home-random.jpg';
-import cincoLogo from '../../assets/cinco_logo.jpeg';
 
 const WhatGPT3 = () => (
   <div className="gpt3__whatgpt3 section__margin" id="wgpt3">
     <div className="gpt3__whatgpt3-feature">
-      <div className="logo-container">
-        <img src={cincoLogo} alt="cinco_logo" className="logo-cinco" />
-      </div>
       <div className="text-container">
         <h3 style={{ fontFamily: 'Dosis', fontWeight: 800, fontSize: '18px', lineHeight: '24px', letterSpacing: '0.1em', color: 'black', textAlign: 'left' }}>Tuotamme kotihoito-, kotisairaanhoito- sekä asumisen tukipalveluja ikäihmisille, vammaisille ja kehitysvammaisille. Palvelemme kunnissa Helsinki, Espoo, Vantaa ja Kirkkonummi.</h3>
       </div>

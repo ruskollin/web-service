@@ -6,27 +6,41 @@
     margin: 20px 0;
     padding: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row; /* Change to row to align items side by side */
+    align-items: center; /* Adjust alignment as per your design */
+    justify-content: flex-start; /* Adjust as per your design */
     transition: all 0.3s ease;
   }
   
-  /* Title style */
+  /* Title and image container style */
   .gpt3__features-container__feature-titleV {
-    margin-bottom: 10px;
+    margin-right: 20px; /* Adjust as needed for space between image and text */
   }
   
+  .values-image {
+    max-width: 100px; 
+    height: auto; 
+  }
+  
+  /* Title style */
   .gpt3__features-container__feature-titleV h1 {
-    font-size: 24px;
+    font-size: 34px;
+    line-height: 45px;
     font-weight: bold;
-    color: #333; /* Adjust text color */
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    max-width: 510px;
+    letter-spacing: 4px;
   }
   
   /* Text content style */
   .gpt3__features-container__feature-textV p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #666; /* Adjust text color */
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: black;
+    text-align: left;
   }
   
   /* Hover effect */

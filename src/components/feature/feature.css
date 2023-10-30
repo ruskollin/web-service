@@ -11,10 +11,6 @@
 .gpt3__features-container__feature-img {
     width: 200px;
     height: 300px;
-    transition: transform 0.1s ease-in-out;
-}
-.gpt3__features-container__feature-img:hover {
-    transform: scale(1.1); 
 }
 
 .gpt3__features-container__feature-title {
@@ -53,7 +49,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
-    color: var(--color-text);
+    color: black;
 }
 
 @media screen and (max-width: 550px) {

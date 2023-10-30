@@ -61,6 +61,7 @@
     letter-spacing: 10px;
     font-family: 'Dosis', sans-serif;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .gpt3__header-content p {

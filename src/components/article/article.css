@@ -14,8 +14,8 @@
 }
 
 .gpt3__blog-container_article-image {
-    width: 200px;
-    height: 200px;
+    max-width: 100%;
+    height: auto;
 }
 
 .gpt3__blog-container_article-image img {

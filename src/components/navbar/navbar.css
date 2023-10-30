@@ -23,12 +23,25 @@
 
 .gpt3__navbar-links_logo {
     margin-right: 2rem;
+    display: flex; 
+    align-items: center; 
 }
 
 .gpt3__navbar-links_logo img {
-    width: 62.56px;
-    height: 16.02px;
-}
+    max-width: 50px; 
+    height: auto; 
+  }
+
+.logo-container {
+    display: flex; 
+    align-items: center; 
+  }
+  
+  .logo-cinco {
+    width: 50px; 
+    height: auto; 
+    margin-right: 10px; 
+  }
 
 .gpt3__navbar-links_container {
     display: flex;
@@ -36,6 +49,13 @@
     font-family: 'Dosis', sans-serif;
 }
 
+.logo-cinco {
+    max-width: 100%; 
+    width: auto; 
+    height: auto;
+    flex: 0 0 auto;
+  }
+  
 .gpt3__navbar-sign {
     display: flex;
     justify-content: flex-end;
@@ -57,13 +77,14 @@
 
 .gpt3__navbar-links_logo h1 {
     color: rgb(5, 39, 72);
-    font-family: var(--font-family);
-    font-weight: 900;
-    font-size: 30px;
-    line-height: 25px;
-    text-transform: capitalize;
     margin: 0 1rem;
-    cursor: pointer;
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    max-width: 510px;
+    letter-spacing: 4px;
 }
 
 .gpt3__navbar-sign button,
@@ -127,6 +148,16 @@
         display: flex;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .logo-cinco {
+      width: 40px; /* Adjust the width for smaller screens */
+    }
+  
+    h1 {
+      font-size: 18px; /* Adjust font size for smaller screens */
+    }
+  }
 
 @media screen and (max-width: 700px) {
     .gpt3__navbar {
