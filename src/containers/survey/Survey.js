@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React from "react";
+import PieChart from "./PieChart"
 import "./Survey.css";
 
 const Survey = () => {
@@ -36,25 +37,46 @@ const Survey = () => {
     },
   ];
   return (
-    <div className="gpt3__survey">
+    <div className="gpt3__survey section__padding">
     <div id="survey">
       <div className="gpt3__survey-heading">
       <h1 className="heading-container ">Asiakastyytyväisyys 2023</h1>
       </div>
       <div className="gpt3__survey-container">
-      {surveyData.map((survey) => (
+        <div className="legend-container">
+  <div className="legend">
+      <div className="legend-item">
+        <div className="legend-color green"></div>
+        <span>Kyllä</span>
+      </div>
+      <div className="legend-item">
+        <div className="legend-color red"></div>
+        <span>Ei</span>
+      </div>
+      <div className="legend-item">
+        <div className="legend-color gray"></div>
+        <span>Ei Vastausta</span>
+      </div>
+        </div>
+    </div>
+    <div style={{marginTop: 65}}>
+    {surveyData.map((survey) => (
               <div key={survey.id} className="survey-questions">
                 <div className="question">
                   <p>{survey.data}</p>
                 </div>
-                <div className="bar">
+                <div className="bar" style={{ backgroundColor: survey.id === 5 ? 'gray' : '#d88a8a'}}>
                   <div
                     className="progress"
                     style={{ width: `${survey.percentage}%` }}
-                  />
+                  >
+                    <p>{survey.percentage}%</p>
+                  </div>
                 </div>
               </div>
             ))}
+    </div>
+      <PieChart />
       </div>
     </div>
     </div>

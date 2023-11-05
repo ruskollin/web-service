@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    font-family: 'Dosis', sans-serif;
     padding: 2rem 6rem;
     position: fixed;
     top: 0;
@@ -151,11 +151,11 @@
 
 @media screen and (max-width: 768px) {
     .logo-cinco {
-      width: 40px; /* Adjust the width for smaller screens */
+      width: 40px; 
     }
   
     h1 {
-      font-size: 18px; /* Adjust font size for smaller screens */
+      font-size: 18px; 
     }
   }
 

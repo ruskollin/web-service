@@ -48,7 +48,7 @@ const Feedback = () => {
         const autoPlay = () => {
           interval = setInterval(() => {
             handleNext();
-          }, 100000); 
+          }, 5000); 
         };
     
         autoPlay(); 
@@ -73,7 +73,7 @@ const Feedback = () => {
         <h1 className="heading-container ">Palautemme</h1>
         <div className="carousel">
         {/* <button className="arrow prev" onClick={handlePrev}><FontAwesomeIcon icon={faBackward} /></button> */}
-          <div className="slide-container" style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}>
+          <div className="slide-container">
             {comments.map((comment, index) => (
               <div key={comment.id} className="slide">
                 <Stars />

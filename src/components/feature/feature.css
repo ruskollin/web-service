@@ -67,3 +67,10 @@
         margin: 1rem 0;
     }
 }
+
+@media screen and (max-width: 650px) {
+    .gpt3__features-container__feature-img {
+        width: 150px;
+        height: 200px;
+    }
+}
