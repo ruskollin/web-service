@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     font-family: 'Dosis', sans-serif;
-    padding: 2rem 6rem;
+    padding: 1rem 6rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -11,7 +11,7 @@
     z-index: 1000; 
     background-color: #F4CCCC;
     border-bottom: 1px solid #e3aeae; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .gpt3__navbar-links {
@@ -78,7 +78,7 @@
 .gpt3__navbar-links_logo h1 {
     color: rgb(5, 39, 72);
     margin: 0 1rem;
-    font-size: 34px;
+    font-size: 1.5rem;
     line-height: 45px;
     font-weight: bold;
     font-family: 'Dosis', sans-serif;
@@ -161,13 +161,13 @@
 
 @media screen and (max-width: 700px) {
     .gpt3__navbar {
-        padding: 2rem 4rem;
+        padding: 1rem 4rem;
     }
 }
 
 @media screen and (max-width: 550px) {
     .gpt3__navbar {
-        padding: 2rem;
+        padding: 1rem;
     }
 
     .gpt3__navbar-sign {
