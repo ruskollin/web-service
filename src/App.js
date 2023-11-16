@@ -19,7 +19,7 @@ function FadeInSection({ children }) {
         }
         if (entry.target === lastRef.current && entry.isIntersecting) {
           setVisible(true);
-          observer.disconnect(); // Stop observing when the last element is visible
+          observer.disconnect();
         }
       });
     });
@@ -27,7 +27,7 @@ function FadeInSection({ children }) {
     observer.observe(domRef.current);
 
     return () => {
-      observer.disconnect(); // Cleanup the observer
+      observer.disconnect();
     };
   }, []);
 
