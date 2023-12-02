@@ -5,6 +5,7 @@ import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg
 import { faEnvelope, faPhone, faAddressCard } from '@fortawesome/free-solid-svg-icons';
 
 import cincoLogo from '../../assets/cinco_logo.jpeg';
+import luotettavaLogo from '../../assets/luotettava.png';
 
 const Footer = () => {
   const yearToday = new Date().getFullYear();
@@ -20,8 +21,10 @@ const Footer = () => {
 
       <div className="gpt3__footer-links">
         <div className="gpt3__footer-links_logo">
-          <img src={cincoLogo} alt="cinco_logo" className="logo-cinco-footer" />
-          <h4>Cinco Care Oy</h4>
+          <div className="logo_company">
+            <img src={cincoLogo} alt="cinco_logo" className="logo-cinco-footer" />
+            <h2 style={{ marginLeft: 10 }}>Cinco Care Oy</h2>
+          </div>
           <p>Ruukuntekijäntie 13</p>
           <p>E 20, 01600 Vantaa</p>
         </div>
@@ -39,6 +42,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="gpt3__footer-copyright">
+        <img src={luotettavaLogo} alt="company you can trust logo" className="luotettava-footer" />
         <p>{yearToday} Cinco Care. All rights reserved.</p>
       </div>
     </div>

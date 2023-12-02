@@ -19,7 +19,6 @@ const Navbar = () => {
           <p><a href="#home">Etusivu</a></p>
           <p><a href="#services">Palvelustamme</a></p>
           <p><a href="#footer">Yhteystiedot</a></p>
-          <p><a href="#price">Hinnastomme</a></p>
         </div>
       </div>
       <div className="gpt3__navbar-menu">
@@ -32,7 +31,6 @@ const Navbar = () => {
               <p><a href="#home">Etusivu</a></p>
               <p><a href="#services">Palvelustamme</a></p>
               <p><a href="#footer">Yhteystiedot</a></p>
-              <p><a href="#price">Hinnastomme</a></p>
               <p><a href="sdf">Kieli</a></p>
             </div>
           </div>

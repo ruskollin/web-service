@@ -59,7 +59,7 @@
 .gpt3__whatgpt3-container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
 
     margin-top: 2rem;
 }
@@ -69,17 +69,16 @@
     flex: 1;
     margin: 1rem;
     min-width: 210px;
-    display: unset;
-    flex-direction: column;
     background-color: #F4CCCC;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     height: 700px;
     padding: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     transition: all 0.3s ease;
+    justify-content: unset;
 }
 
 /* Customizing feature component as per needs */
@@ -107,6 +106,10 @@
 
 @media screen and (max-width: 650px) {
     /* Customizing feature component as per needs */
+    .gpt3__whatgpt3-container .gpt3__features-container__feature {
+        flex-direction: column;
+    }
+
     .gpt3__whatgpt3-feature .gpt3__features-container__feature {
         flex-direction: column;
     }

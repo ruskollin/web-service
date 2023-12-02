@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Blog, Features, WhatGPT3, Footer, Feedback, Prices } from './containers';
+import { Features, WhatGPT3, Footer, Feedback } from './containers';
 import { Navbar } from './components';
 import nurse from './assets/nurse-pink3.jpg';
 import './containers/header/header.css';
@@ -71,16 +71,10 @@ const App = () => {
             <Features />
           </FadeInSection>
           <FadeInSection>
-            <Blog />
-          </FadeInSection>
-          <FadeInSection>
             <Feedback />
           </FadeInSection>
           <FadeInSection>
             <Survey />
-          </FadeInSection>
-          <FadeInSection>
-            <Prices />
           </FadeInSection>
         </div>
       </div>
