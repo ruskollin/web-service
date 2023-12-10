@@ -25,8 +25,8 @@ const Footer = () => {
             <img src={cincoLogo} alt="cinco_logo" className="logo-cinco-footer" />
             <h2 style={{ marginLeft: 10 }}>Cinco Care Oy</h2>
           </div>
-          <p>Ruukuntekijäntie 13</p>
-          <p>E 20, 01600 Vantaa</p>
+          <p>Klaneettitie 6-8A</p>
+          <p>Kannelmäki, 00420 Helsinki</p>
         </div>
         <div className="gpt3__footer-links_div">
           <h4>Contact Info</h4>

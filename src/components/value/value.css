@@ -52,8 +52,13 @@
     .gpt3__features-container__featureV {
         display: flex;
         flex-wrap: wrap;
-        width: 50%;
+        width: 100%;
         margin-top: 20px;
+        min-width: 300px;
+    }
+
+    .gpt3__features-container__feature-titleV {
+      margin: auto;
     }
 }
 
@@ -65,8 +70,10 @@
     .gpt3__features-container__featureV  {
        width: 100%;
     }
+}
 
-    .gpt3__features-container__feature-titleV {
-      margin: auto;
-  }
+@media screen and (max-width: 350px) {
+.gpt3__features-container__featureV {
+    min-width: unset;
+}
 }
