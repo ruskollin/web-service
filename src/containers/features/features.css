@@ -138,6 +138,10 @@
 }
 
 @media screen and (max-width: 650px) {
+    .gpt3__features-heading {
+       margin: auto;
+    }
+
     .gpt3__features-heading h1 {
         line-height: 40px;
         text-align: center;
