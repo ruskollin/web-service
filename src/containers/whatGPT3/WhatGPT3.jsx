@@ -20,7 +20,7 @@ const WhatGPT3 = () => (
       <Services imgUrl={home1} title="Kotipalvelut" text="Tarjoamme apua ja avustusta asiakkaiden päivittäisissä toiminnoissa (saattaja-apu, henkilökohtainen hygienia, ruokailu, ulkoilu, kauppapalvelut). Varmistamme, että asiakkailla on turvallinen kotiympäristö." />
       <Services imgUrl={home3} title="Kotisairaanhoito" text="Tarjoamme perussairaanhoitoa  (haavahoito, lääkehoito, pistokset, katetrointi, ompeleiden poisto). Huolehdimme siitä, että asiakkaat saavat laadukasta hoitoa kotona." />
       <Services imgUrl={home2} title="Kotisiivous" text="Tarjoamme asumisen  kotisiivousta ja pyykkihuoltoa. Kotisiivouksen tärkeä asia on kodin siisteys asiakkaiden mielekkään elämän edistämiseksi. " />
-      <Services imgUrl={home4} title="Palvelusetelit" text="Hyväksymme myös Helsingin kaupungin kotihoidon- ja kotisiivouksen myöntämiä palveluseteleitä. Palveluseteli on maksusitoumus, jolla voit ostaa palveluja yksityisiltä palveluntarjoajilta. Helsingin kaupunki (insert link here, below) https://www.hel.fi/fi/sosiaali-ja-terveyspalvelut/asiakkaan-tiedot-ja-oikeudet/palveluseteli." />
+      <Services imgUrl={home4} title="Palvelusetelit" text="Hyväksymme myös Helsingin kaupungin kotihoidon- ja kotisiivouksen myöntämiä palveluseteleitä. Palveluseteli on maksusitoumus, jolla voit ostaa palveluja yksityisiltä palveluntarjoajilta. Helsingin kaupunki https://www.hel.fi/fi/sosiaali-ja-terveyspalvelut/asiakkaan-tiedot-ja-oikeudet/palveluseteli." />
     </div>
   </div>
 );

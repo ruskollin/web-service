@@ -51,7 +51,6 @@ const Form = () => {
     content = (
       <div className="success-message">
         <Lottie animationData={thanks} />
-        <p>Your message has been sent successfully!</p>
       </div>
     );
   } else {
