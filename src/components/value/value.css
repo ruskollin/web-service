@@ -36,8 +36,8 @@
   /* Text content style */
   .gpt3__features-container__feature-textV p {
     font-family: var(--font-family);
-    font-size: 1rem;
-    line-height: 24px;
+    font-size: 1.2rem;
+    line-height: 27px;
     color: black;
     text-align: left;
   }
