@@ -70,5 +70,6 @@
     .gpt3__features-container__feature-img {
         width: 150px;
         height: 200px;
+        margin: auto;
     }
 }

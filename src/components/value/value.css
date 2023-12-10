@@ -36,8 +36,7 @@
   /* Text content style */
   .gpt3__features-container__feature-textV p {
     font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 14px;
+    font-size: 1.3rem;
     line-height: 24px;
     color: black;
     text-align: left;
@@ -66,4 +65,8 @@
     .gpt3__features-container__featureV  {
        width: 100%;
     }
+
+    .gpt3__features-container__feature-titleV {
+      margin: auto;
+  }
 }
