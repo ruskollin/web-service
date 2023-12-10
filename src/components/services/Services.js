@@ -10,8 +10,7 @@ const Services = ({ title, text, imgUrl }) => {
       <div className="gpt3__features-container__feature-title-text">
         <div className="gpt3__features-container__feature-title">
           <h1>{title}</h1>
-          <p>{text}</p>
-          <p><a href={linkToHelsinki}>Helsingin Kaupunki</a></p>
+          <p>{text}{title === 'Palvelusetelit' && <p>Lue lisää: <a style={{ color: 'blue', textDecoration: 'underline', marginLeft: 10 }} href={linkToHelsinki} target="_blank" rel="noopener noreferrer">Helsingin Kaupungin Palvelusetelit</a></p>}</p>
         </div>
       </div>
     </div>
