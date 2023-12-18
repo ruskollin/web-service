@@ -33,7 +33,7 @@ const Form = () => {
       setIsSuccessful(true);
       resetSuccess();
     } catch (error) {
-      console.log(error);
+      //do nothing
     } finally {
       setLoading(false);
     }
