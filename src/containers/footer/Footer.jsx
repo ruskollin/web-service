@@ -1,7 +1,7 @@
 import React from 'react';
 import './footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhone, faAddressCard } from '@fortawesome/free-solid-svg-icons';
 
 import cincoLogo from '../../assets/cinco_logo.jpeg';
@@ -36,9 +36,7 @@ const Footer = () => {
         </div>
         <div className="gpt3__footer-links_div">
           <h4>Social Media</h4>
-          <p><FontAwesomeIcon icon={faFacebook} style={{ marginRight: 10 }} /> Facebook</p>
-          <p><FontAwesomeIcon icon={faInstagram} style={{ marginRight: 10 }} /> Instagram </p>
-          <p><FontAwesomeIcon icon={faYoutube} style={{ marginRight: 10 }} /> Youtube </p>
+          <a href="https://www.facebook.com/profile.php?id=100083329627588" target="_blank" rel="noreferrer"><p><FontAwesomeIcon icon={faFacebook} style={{ marginRight: 10 }} /> Facebook</p></a>
         </div>
       </div>
       <div className="gpt3__footer-copyright">
