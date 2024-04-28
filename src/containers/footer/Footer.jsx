@@ -1,8 +1,9 @@
 import React from 'react';
 import './footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhone, faAddressCard } from '@fortawesome/free-solid-svg-icons';
+import documentFile from './cinco.pdf';
 
 import cincoLogo from '../../assets/cinco_logo.jpeg';
 import luotettavaLogo from '../../assets/luotettava.png';
@@ -27,18 +28,17 @@ const Footer = () => {
           </div>
           <p>Ruukuntekijäntie 13</p>
           <p>E 20, 01600 Vantaa</p>
+          <a href={documentFile} target="_blank" rel="noreferrer" className="custom-link"> Katso omavalvontasuunnitelma tästä</a>
         </div>
         <div className="gpt3__footer-links_div">
-          <h4>Contact Info</h4>
+          <h4>Yhteystiedot</h4>
           <p><FontAwesomeIcon icon={faAddressCard} style={{ marginRight: 10 }} />Y-tunnus: 3258415-1</p>
           <p><FontAwesomeIcon icon={faPhone} style={{ marginRight: 10 }} /> 041 312 2708</p>
           <p><FontAwesomeIcon icon={faEnvelope} style={{ marginRight: 10 }} />info@cincocare.fi</p>
         </div>
         <div className="gpt3__footer-links_div">
-          <h4>Social Media</h4>
-          <p><FontAwesomeIcon icon={faFacebook} style={{ marginRight: 10 }} /> Facebook</p>
-          <p><FontAwesomeIcon icon={faInstagram} style={{ marginRight: 10 }} /> Instagram </p>
-          <p><FontAwesomeIcon icon={faYoutube} style={{ marginRight: 10 }} /> Youtube </p>
+          <h4>Sosiaalinen Media</h4>
+          <p><FontAwesomeIcon icon={faFacebook} style={{ marginRight: 10, color: '#1877F2' }} /> <a href="https://www.facebook.com/profile.php?id=100081762541245" target="_blank" rel="noreferrer" style={{ color: '#3b5998' }}>Facebook</a></p>
         </div>
       </div>
       <div className="gpt3__footer-copyright">
