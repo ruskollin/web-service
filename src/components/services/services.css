@@ -60,13 +60,14 @@
 
 @media screen and (max-width: 550px) {
     .gpt3__features-container__feature-title h1 {
-        font-size: 14px;
+        font-size: 1.2rem;
         line-height: 22px;
+        margin-bottom: 50px;
     }
 
     .gpt3__features-container__feature-title-text p {
-        font-size: 12px;
-        line-height: 20px;
+        font-size: 1.1rem;
+        line-height: 27px;
     }
 
     .gpt3__features-container_feature-text p {
@@ -76,5 +77,9 @@
 
     .gpt3__features-container__feature {
         margin: 1rem 0;
+    }
+
+    .gpt3__features-container__feature-title-text {
+        margin-left: 0px;
     }
 }

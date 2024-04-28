@@ -1,10 +1,9 @@
 import React, { useEffect, useRef } from 'react';
-import { Features, WhatGPT3, Footer, Feedback } from './containers';
+import { Features, WhatGPT3, Footer, Feedback, Survey, Form } from './containers';
 import { Navbar } from './components';
 import nurse from './assets/nurse-pink3.jpg';
 import './containers/header/header.css';
 import './App.css';
-import Survey from './containers/survey/Survey';
 
 function FadeInSection({ children }) {
   const [isVisible, setVisible] = React.useState(false);
@@ -75,6 +74,9 @@ const App = () => {
           </FadeInSection>
           <FadeInSection>
             <Survey />
+          </FadeInSection>
+          <FadeInSection>
+            <Form />
           </FadeInSection>
         </div>
       </div>

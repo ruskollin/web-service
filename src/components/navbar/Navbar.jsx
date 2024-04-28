@@ -31,7 +31,7 @@ const Navbar = () => {
               <p><a href="#home">Etusivu</a></p>
               <p><a href="#services">Palvelustamme</a></p>
               <p><a href="#footer">Yhteystiedot</a></p>
-              <p><a href="sdf">Kieli</a></p>
+              {/* <p><a href="sdf">Kieli</a></p> */}
             </div>
           </div>
         )}

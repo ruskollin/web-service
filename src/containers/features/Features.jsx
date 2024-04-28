@@ -30,16 +30,14 @@ const featuresData = [
 ];
 
 const Features = () => (
-  <div className="gpt3__features section__padding">
-    <div className="gpt3__features section__padding" id="features">
-      <div className="gpt3__features-heading">
-        <h1 className="gradient__text">Arvomme</h1>
-      </div>
-      <div className="gpt3__features-container">
-        {featuresData.map((item, index) => (
-          <Value image={item.image} title={item.title} text={item.text} key={item.title + index} className="animated bounceInRight" />
-        ))}
-      </div>
+  <div className="gpt3__features section__padding" id="features">
+    <div className="gpt3__features-heading">
+      <h1 className="gradient__text">Arvomme</h1>
+    </div>
+    <div className="gpt3__features-container">
+      {featuresData.map((item, index) => (
+        <Value image={item.image} title={item.title} text={item.text} key={item.title + index} className="animated bounceInRight" />
+      ))}
     </div>
   </div>
 );

@@ -19,9 +19,14 @@
 }
 
 .gpt3__features-heading {
-    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
     text-align: left;
-    margin-bottom: 5rem;
+    margin-right: 5rem;
 }
 
 .gpt3__blog-heading h1 {
@@ -35,6 +40,7 @@
 }
 
 .gpt3__features-heading h1 {
+    text-align: left;
     font-size: 34px;
     line-height: 45px;
     font-weight: bold;
@@ -132,8 +138,12 @@
 }
 
 @media screen and (max-width: 650px) {
+    .gpt3__features-heading {
+       margin: auto;
+    }
+
     .gpt3__features-heading h1 {
-        font-size: 20px;
         line-height: 40px;
+        text-align: center;
     }
 }
