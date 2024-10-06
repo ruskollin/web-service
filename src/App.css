@@ -21,13 +21,6 @@ a {
   scroll-snap-type: y mandatory;
 }
 
-/* .gradient__bg__after {
-  max-width: 1300px; 
-  padding: 0 20px; 
-  width: 100%;
-  margin: auto;
-} */
-
 .gradient__bg__after_content {
   padding-top: 150px;
   text-align: center;
@@ -44,6 +37,7 @@ a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: white;
 }
 
 .section__padding {
@@ -104,6 +98,10 @@ a {
 
   .section__margin {
     margin: 4rem;
+  }
+
+  .gpt3__header-content p {
+    font-size: 1.2rem;
   }
 }
 

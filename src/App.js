@@ -54,8 +54,10 @@ const App = () => {
           <div className="img-content-1">
             <FadeInSection>
               <div className="gpt3__header-content">
-                <h1 className="gradient__text">Me autamme, koska välitämme</h1>
-                <p>Tarjoamme laadukasta palvelua kotona. Tavoitteenamme on tukea asiakkaita pärjäämään itsenäisesti ja turvallisesti kotona.</p>
+                <div className="text-container">
+                  <h1 className="gradient__text" style={{ color: 'teal' }}>Me autamme, koska välitämme</h1>
+                  <p>Tarjoamme laadukasta palvelua kotona. Tavoitteenamme on tukea asiakkaita pärjäämään itsenäisesti ja turvallisesti kotona.</p>
+                </div>
               </div>
             </FadeInSection>
           </div>

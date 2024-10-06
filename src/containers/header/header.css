@@ -24,7 +24,8 @@
 
 .fixed-image {
     position: fixed;
-    top: -56px;
+    /* top: -56px; */
+    top: 0;
     left: 0;
     z-index: -1;
     object-fit: cover;
@@ -54,8 +55,11 @@
 
 .gpt3__header-content h1 {
     font-family: var(--font-family);
-    text-shadow: 1px 1px 1px black;
-    font-weight: 800;
+    text-shadow: 
+    1px 1px 0 black,  
+    1px 1px 1px black,  
+    1px -1px 1px black;
+    font-weight: 900;
     font-size: 3em;
     line-height: 75px;
     letter-spacing: 10px;
@@ -67,14 +71,23 @@
 .gpt3__header-content p {
     font-family: var(--font-family);
     font-weight: 900;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     line-height: 28px;
-    color: #fff9d6;
+    /*  color: #fff9d6; */
+    color: white;
     text-shadow: 2px 2px 4px rgb(5 5 5 / 50%);
     margin-top: 1.5rem;
     letter-spacing: 2px;
     font-family: 'Dosis', sans-serif;
     max-width: 650px;
+}
+
+.text-container {
+    background-color: rgba(255, 192, 203, 0.7);
+    padding: 20px; 
+    border-radius: 10px; 
+    display: inline-block; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
 .gpt3__header-content__input {
