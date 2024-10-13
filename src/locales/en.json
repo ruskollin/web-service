@@ -1,0 +1,55 @@
+{
+    "menu": {
+        "homepage": "Homepage",
+        "services": "Services",
+        "contacts": "Contacts",
+        "language" : {
+            "english": "EN",
+            "finnish": "FI",
+            "swedish": "SWE"
+        }
+    },
+    "slogan": "Goobye",
+    "slogan_description": "",
+    "services" : {
+        "services_description": "",
+        "home_service": "",
+        "home_service_description": "",
+        "home_nursing_care": "",
+        "home_nursing_care_description": "",
+        "home_cleaning": "",
+        "home_cleaning_description": "",
+        "voucher": "",
+        "voucher_description": ""
+    },
+    "values": "",
+    "dignity": "",
+    "self_determination": "",
+    "trust": "",
+    "independence": "",
+    "feedback": "Feedback",
+    "manager": "Manager",
+    "cleaning_customer": "Cleaning customer",
+    "customer": "Customer",
+    "customer_satisfaction": "Yes",
+    "survey_language": "",
+    "survey_treatment": "",
+    "survey_satisfaction": "",
+    "survey_goal": "",
+    "survey_punctuality": "",
+    "survey_effort": "",
+    "yes": "Yes",
+    "no": "No",
+    "no_answer": "No answer",
+    "send_message_title": "Hello",
+    "name": "Name",
+    "email": "Email address",
+    "message": "Message",
+    "send": "Send",
+    "footer": {
+        "plan": "",
+        "contacts": "Contacts",
+        "business_number": "",
+        "social_media": "Social media"
+    }
+}
