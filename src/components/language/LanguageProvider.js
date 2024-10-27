@@ -1,13 +1,29 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { LanguageContext } from './LanguageContext';
 import { setLanguageInfo } from '../../redux/Language';
+import { LanguageContext } from './LanguageContext';
+import en from './en.json';
+import fi from './fi.json';
 
-export const LanguageProvider = ({ children, language }) => (
-  <LanguageContext.Provider value={{ language }}>
-    {children}
-  </LanguageContext.Provider>
-);
+const translations = {
+  en,
+  fi,
+};
+
+const LanguageProvider = ({ children, language, setLanguageInfo: updateLanguageInfo }) => {
+  const translate = (key) => translations[language]?.[key] || key;
+
+  const switchLanguage = (lang) => {
+    updateLanguageInfo(lang);
+    localStorage.setItem('language', lang);
+  };
+
+  return (
+    <LanguageContext.Provider value={{ language, translate, switchLanguage }}>
+      {children}
+    </LanguageContext.Provider>
+  );
+};
 
 const mapStateToProps = (state) => ({
   language: state.language.language,

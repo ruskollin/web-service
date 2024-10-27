@@ -1,6 +1,8 @@
-import React, { useEffect, useRef } from 'react';
-import { Features, WhatGPT3, Footer, Feedback, Survey, Form } from './containers';
+import React, { useEffect, useRef, useContext } from 'react';
+import { Features, Operations, Footer, Feedback, Survey, Form } from './containers';
+import { LanguageContext } from './components/language/LanguageContext';
 import { Navbar } from './components';
+
 import nurse from './assets/nurse-pink3.jpg';
 import './containers/header/header.css';
 import './App.css';
@@ -39,6 +41,7 @@ function FadeInSection({ children }) {
 }
 
 const App = () => {
+  const { translate } = useContext(LanguageContext);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -55,8 +58,8 @@ const App = () => {
             <FadeInSection>
               <div className="gpt3__header-content">
                 <div className="text-container">
-                  <h1 className="gradient__text" style={{ color: 'teal' }}>Me autamme, koska välitämme</h1>
-                  <p>Tarjoamme laadukasta palvelua kotona. Tavoitteenamme on tukea asiakkaita pärjäämään itsenäisesti ja turvallisesti kotona.</p>
+                  <h1 className="gradient__text" style={{ color: 'teal' }}>{translate('slogan')}</h1>
+                  <p>{translate('slogan_description')}</p>
                 </div>
               </div>
             </FadeInSection>
@@ -66,19 +69,19 @@ const App = () => {
       <div className="gradient__bg__after_content">
         <div className="gradient__bg__after_content_white">
           <FadeInSection>
-            <WhatGPT3 />
+            <Operations translate={translate} />
           </FadeInSection>
           <FadeInSection>
-            <Features />
+            <Features translate={translate} />
           </FadeInSection>
           <FadeInSection>
-            <Feedback />
+            <Feedback translate={translate} />
           </FadeInSection>
           <FadeInSection>
-            <Survey />
+            <Survey translate={translate} />
           </FadeInSection>
           <FadeInSection>
-            <Form />
+            <Form translate={translate} />
           </FadeInSection>
         </div>
       </div>

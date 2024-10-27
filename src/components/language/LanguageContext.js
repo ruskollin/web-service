@@ -1,6 +1,7 @@
 import React from 'react';
 
 export const LanguageContext = React.createContext({
-  language: '',
-  switchLanguage: () => { },
+  language: 'fi',
+  translate: (key) => key,
+  switchLanguage: () => {},
 });
