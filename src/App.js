@@ -85,7 +85,7 @@ const App = () => {
           </FadeInSection>
         </div>
       </div>
-      <Footer />
+      <Footer translate={translate} />
     </div>
   );
 };

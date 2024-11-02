@@ -6,7 +6,7 @@ import interview from './contact.json';
 import loadingAnimation from './loading.json';
 import thanks from './thanks.json';
 
-const Form = () => {
+const Form = ({ translate }) => {
   const form = useRef();
   const [loading, setLoading] = useState(false);
   const [isSuccessful, setIsSuccessful] = useState(false);
@@ -57,18 +57,18 @@ const Form = () => {
     content = (
       <form ref={form} onSubmit={sendEmail}>
         <label htmlFor="name">
-          Nimi:
+          {translate('name')}:
           <input type="text" name="user_name" required />
         </label>
         <label htmlFor="email">
-          Sähköpostiosoitteesi:
+          {translate('email')}:
           <input type="email" name="user_email" required />
         </label>
         <label htmlFor="message">
-          Viesti:
+          {translate('message')}:
           <textarea name="message" required />
         </label>
-        <input type="submit" value="Lähetä" />
+        <input type="submit" value={translate('send')} />
       </form>
     );
   }
@@ -79,7 +79,7 @@ const Form = () => {
         <Lottie animationData={interview} />
       </div>
       <div className="form-container">
-        <h1>LÄHETÄ MEILLE VIESTI...</h1>
+        <h1>{translate('send_message_title')}...</h1>
         {content}
       </div>
     </div>
