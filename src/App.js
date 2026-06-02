@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useContext } from 'react';
 import { Features, Operations, Footer, Feedback, Survey, Form } from './containers';
 import { LanguageContext } from './components/language/LanguageContext';
 import { Navbar } from './components';
-
 import nurse from './assets/nurse-pink3.jpg';
 import './containers/header/header.css';
 import './App.css';

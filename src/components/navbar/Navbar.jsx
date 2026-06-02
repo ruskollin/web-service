@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+// import Lottie from 'lottie-react';
 import cincoLogo from '../../assets/cinco_logo.jpeg';
+// import xmas from '../../assets/xmas.json';
 import './navbar.css';
 
 const Navbar = () => {
@@ -12,7 +14,10 @@ const Navbar = () => {
         <div className="gpt3__navbar-links_logo">
           <div className="logo-container">
             <img src={cincoLogo} alt="cinco_logo" className="logo-cinco" />
-            <h1>Cinco Care</h1>
+            <h1 className="logo-title">Cinco Care</h1>
+            {/* <div className="lottie-container">
+              <Lottie animationData={xmas} />
+            </div> */}
           </div>
         </div>
         <div className="gpt3__navbar-links_container">

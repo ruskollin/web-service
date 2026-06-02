@@ -34,7 +34,8 @@
 
 .logo-container {
     display: flex; 
-    align-items: center; 
+    align-items: center;
+    flex-wrap: nowrap;
   }
   
   .logo-cinco {
@@ -55,6 +56,11 @@
     height: auto;
     flex: 0 0 auto;
   }
+
+.logo-title {
+    white-space: nowrap;
+    font-size: 20px;
+}
   
 .gpt3__navbar-sign {
     display: flex;
@@ -67,7 +73,7 @@
 .gpt3__navbar-menu_container p {
     color: rgb(5, 39, 72);
     font-weight: 600;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 25px;
     text-transform: uppercase;
     margin: 0 1rem;
@@ -139,6 +145,20 @@
     display: none;
 }
 
+.lottie-container {
+    flex: 0 0 auto;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    max-width: 100px;
+    height: auto;
+}
+
+.lottie-container > div { 
+    width: 80%;
+    height: auto;
+}
+
 @media screen and (max-width: 1050px) {
     .gpt3__navbar-links_container {
         display: none;
@@ -156,6 +176,10 @@
   
     h1 {
       font-size: 18px; 
+    }
+
+    .lottie-container {
+        max-width: 70px;
     }
   }
 
